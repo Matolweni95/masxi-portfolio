@@ -86,10 +86,6 @@
 
 }
 
-.container-card{
-    display: flex;
-    justify-content: space-around;
-}
 
 /*headings*/
 #cont-head {
@@ -136,7 +132,9 @@ h3 {
 }
  #hero-img {
      position: relative;
-     margin-left: 40.5%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
      height: 200px;
      width: 190px;
      top: 180px;
@@ -159,7 +157,7 @@ h3 {
   .loc-cap{
     position: relative;
     color: white;
-    top: 65px;
+    top: 58px;
     margin-left: 100px;
   }
 
@@ -222,8 +220,17 @@ h3 {
 #projects{
     margin-left: 340px;
     scroll-behavior: smooth;
-    height: 90vh;
+    height: auto;
+    padding-bottom: 160px;
     background-color: #a6a6a6;
+}
+
+
+.container-card{
+    display: flex;
+    flex-flow: wrap;
+    gap: 18px;
+    justify-content: space-around;
 }
 
 #contact{
@@ -241,4 +248,123 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+
+ @media (max-width :1000px){
+  #nav{
+    display:none;
+  }
+    .sidenav
+    {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+    }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      
+      }
+      
+      .sidenav a:hover{
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 768px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      #hero-img {
+        position: relative;
+        height: 300px;
+        width: 290px;
+        display: block;
+        top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+      .main {
+        z-index: 1;
+        background-image: url(/images/back-g.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 0;
+        font-size: 28px; 
+        padding: 0px 10px;
+        height: 100vh;
+     }
+
+     #about{
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      scroll-behavior: smooth;
+      height: auto;
+      resize: horizontal;
+      background-color:#cccccc;
+  }
+
+  #abt-txt {
+    padding-left: 15px;
+    padding-right: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+  #projects{
+    margin-left: 0px;
+    scroll-behavior: smooth;
+    height: auto;
+    gap: 12px;
+    padding-bottom: 160px;
+    background-color: #a6a6a6;
+}
+#contact{
+  margin-left: 0px;
+  scroll-behavior: smooth;
+  height: 40vh;
+  background-color: #1e1e2f;
+}
+
+.logo{
+  height: 60px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fig-cap {
+
+  position: relative;
+  text-align: center;
+  top: 40px;
+  font-size: 40px;
+
+}
+    
+}
+
 
