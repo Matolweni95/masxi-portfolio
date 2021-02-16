@@ -249,122 +249,161 @@ h3 {
     align-items: center;
 }
 
- @media (max-width :1000px){
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+@media (max-width :767px){
   #nav{
     display:none;
+
   }
-    .sidenav
-    {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-        text-align:center;
-    }
+  .main {
       
-      .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-      
-      }
-      
-      .sidenav a:hover{
-        color: #f1f1f1;
-      }
-      
-      .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-      }
-      
-      @media screen and (max-height: 768px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
-      }
-      #hero-img {
-        position: relative;
-        height: 300px;
-        width: 290px;
-        display: block;
-        top: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
-      .main {
-        z-index: 1;
-        background-image: url(/images/back-g.jpeg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-left: 0;
-        font-size: 28px; 
-        padding: 0px 10px;
-        height: 100vh;
-     }
-
-     #about{
-
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      scroll-behavior: smooth;
-      height: auto;
-      resize: horizontal;
-      background-color:#cccccc;
-  }
-
-  #abt-txt {
-    padding-left: 15px;
-    padding-right: 10px;
+    background-image: url(/images/back-g.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 28px;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
-  #projects{
+    bottom: 48px; 
     margin-left: 0px;
-    scroll-behavior: smooth;
-    height: auto;
-    gap: 12px;
-    padding-bottom: 160px;
-    background-color: #a6a6a6;
+    z-index: -1;
+    padding: 0px 10px;
+    height: 100vh;
+    
+ }
+ #mobile-nav {
+  display: contents;
+ 
 }
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 14%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+#about{
+  bottom: 50px;
+  position: relative;
+  margin-left: 0px;
+  scroll-behavior: smooth;
+  height: auto;
+  resize: horizontal;
+  background-color:#cccccc;
+}
+#abt-txt {
+  position: relative;
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;
+}
+#projects{
+  bottom: 50px;
+  position: relative;
+  margin-left: 0px;
+  scroll-behavior: smooth;
+  height: auto;
+  padding-bottom: 160px;
+  background-color: #a6a6a6;
+}
+.container-card{
+  display: flex;
+  flex-flow: wrap;
+  gap: 25px;
+  justify-content: space-around;
+}
+
 #contact{
+  bottom: 50px;
+  position: relative;
   margin-left: 0px;
   scroll-behavior: smooth;
   height: 40vh;
   background-color: #1e1e2f;
 }
 
-.logo{
-  height: 60px;
+.cont-logo-loc {
+
+  height: 40px;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 32px;
+  top: 90px;
 }
 
-.fig-cap {
-
+.cont-logo {
+  display: flex;
+  height: 25px;
   position: relative;
+  margin-left: 42px;
+  top: 90px;
+}
+
+h1 {
+  padding: 30px;
   text-align: center;
-  top: 40px;
-  font-size: 40px;
-
-}
-    
 }
 
+#cont-head {
+  position: relative;
+  margin-left: 40px;
+  top: 50px;
+  font-size: 28px;
+  color: white;
+}
+#lang{
+  position: relative;
+  bottom: 55px;
+  margin-left: 20px;
+}
 
+}
