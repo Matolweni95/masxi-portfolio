@@ -15,16 +15,31 @@
 </head>
 <body>
     <!-- mobile nav -->
-    	<section id="mobile-nav">
-            <div class="sidenav">
-                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Masixole Matolweni</span>
-                            <div id="mySidenav" class="sidenav">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                <a href="#">About</a>
-                                <a href="#">Services</a>
-                                <a href="#">Clients</a>
-                                <a href="#">Contact</a>
-                            </div>
+    <section id="mobile-nav">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="https://kicks-supreme.s3.us-east-2.amazonaws.com/Resume.pdf">Resume</a>
+                    <a href="#contact">Contact</a>
+                </div>
+        </div>
+ 
+    
+    <span class="masixole" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Masixole</span>
+    
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+    
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+              
                         <!--
                     <div id="socials">
                         <a href="https://www.instagram.com/max_matolweni/" class="fa fa-instagram"></a>
@@ -32,16 +47,7 @@
                         <a href="https://www.linkedin.com/in/masixole-matolweni-425a02118" class="fa fa-linkedin"></a>
                     </div>
                 -->
-                </div> 
-            <script>
-                function openNav() {
-                  document.getElementById("mySidenav").style.width = "100%";
-                }
-                
-                function closeNav() {
-                  document.getElementById("mySidenav").style.width = "0";
-                }
-                </script>
+              
         </section>
 
     <!-- end of mobile nav -->
@@ -70,8 +76,10 @@
                 <div id="hero">
                     <figure>
                         <img id="hero-img" src="https://masixole-resume.s3.us-east-2.amazonaws.com/images/Masixole.jpg">
-                            <figcaption class="fig-cap"><span id="hello">Hello I'm </span><br />Masixole Matolweni</figcaption>
-                        </figure> 
+                            <figcaption class="fig-cap">
+                                <span id="hello">Hello I'm </span><br />Masixole Matolweni
+                            </figcaption>
+                    </figure> 
                 </div>
               </div>  
           </section>
@@ -79,14 +87,14 @@
     <section id="about">
         <h1>About Me</h1>
             <div id="abt-txt">
-                <p>I’m a very intuitive person. I spend a lot of time inbetween coding, learning new tech also balancining things<br />
-                out with video games, and good music and a few other hobbies but there’s also a lot more to it.<br /><br /> I desire to become an Entrepreneur with my hard work and skills in coding and business.
+                <p>I’m a very intuitive person. I spend a lot of time inbetween coding, learning new tech whilst balancining things<br />
+                out with video games, good music and a few other hobbies but there’s also a lot more to it.<br /><br /> I desire to become an Entrepreneur with my hard work and skills in coding.
 
-                Programming is a<br /> true passion of mine and that passion continues to grow, I strive to learn more and more improving my craft<br /> and becoming a valuable asset to a company. 
+                Programming is a<br /> true passion of mine and that passion continues to grow, I strive to learn more and more, improving my craft<br /> and becoming a valuable asset to a company. 
             
                 I enjoy the collaborative nature of working on a team building a <br />product.<br /><br /> The feedback, discussion, and review in this environment brings out the best in each individual member, <br />and is a crucial component in my own personal development.
             
-            <br /><br />Apart from this, I am interested in Full-Stack web development</p>
+            <br /><br />I'm a versitile developer, i do however lean more towards Full-Stack web development</p>
         </div>
 
         <h3>I Speak:</h3>
@@ -108,11 +116,15 @@
                 <div class="card" style="width:400px">
                     <img class="card-img-top" src="https://masixole-resume.s3.us-east-2.amazonaws.com/images/supremekickz.PNG" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Supreme-kickz</h4>
+                            <h4 class="card-title">
+                                Supreme-kickz
+                            </h4>
                                 <p class="card-text">
                                     Shoe store created with Python, Django, HTML, CSS, JavaScript
                                 </p>
-                                    <a href="https://supremekickz.herokuapp.com" class="btn btn-primary">See Shop</a>
+                                    <a href="https://supremekickz.herokuapp.com" class="btn btn-primary">
+                                        See Shop
+                                    </a>
                         </div>
                     </div>
                 <div class="card" style="width:400px">
