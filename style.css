@@ -261,7 +261,7 @@ h3 {
     background-repeat: no-repeat;
     font-size: 28px;
     position: relative;
-    bottom: 48px; 
+    bottom: 50px; 
     margin-left: 0px;
     z-index: -1;
     padding: 0px 10px;
@@ -408,7 +408,7 @@ h1 {
    margin-left: auto;
    margin-right: auto;
    height: 400px;
-   width: 390px;
+   width: 360px;
    top: 35vh;
    border-radius: 50%;
 }
