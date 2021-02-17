@@ -1,20 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 
-* {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --blue-text: #86ddff;
-    --dark-blue: #002b8f;
-    --mid-blue: #3ba0ff;
-}
-
-/* sibebar nav*/
-.sidenav {
+ 
+  .sidenav {
     height: 100%;
     width: 340px;
     align-items: center;
@@ -112,7 +98,11 @@ h3 {
 /*logo*/
 #lang{
     position: relative;
+    display: block;
     bottom: 55px;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
 .logo{
     height: 60px;
@@ -126,7 +116,7 @@ h3 {
 
     position: relative;
     text-align: center;
-    top: 190px;
+    top: 370px;
     font-size: 40px;
 
 }
@@ -137,7 +127,7 @@ h3 {
      margin-right: auto;
      height: 200px;
      width: 190px;
-     top: 180px;
+     top: 21vh;
      border-radius: 50%;
  }
 
@@ -211,9 +201,8 @@ h3 {
 
 #abt-txt {
     position: relative;
-  
-    margin-left: 130px;
-    margin-right: 40px;
+    text-align: center;
+
 }
 
 /*Projects section*/
@@ -236,7 +225,7 @@ h3 {
 #contact{
     margin-left: 340px;
     scroll-behavior: smooth;
-    height: 40vh;
+    height: 20vh;
     background-color: #1e1e2f;
 }
 
@@ -249,7 +238,7 @@ h3 {
     align-items: center;
 }
 
-@media screen and (max-height: 450px) {
+@media (min-width :768px){
   .overlay a {font-size: 20px}
   .overlay .closebtn {
   font-size: 40px;
@@ -259,7 +248,7 @@ h3 {
 }
 
 
-@media (max-width :767px){
+@media screen and (max-device-width :767px){
   #nav{
     display:none;
 
@@ -297,7 +286,7 @@ h3 {
 
 .overlay-content {
   position: relative;
-  top: 14%;
+  top: 34%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -306,7 +295,7 @@ h3 {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 50px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -368,7 +357,7 @@ h3 {
   position: relative;
   margin-left: 0px;
   scroll-behavior: smooth;
-  height: 40vh;
+  height: 20vh;
   background-color: #1e1e2f;
 }
 
@@ -405,5 +394,22 @@ h1 {
   bottom: 55px;
   margin-left: 20px;
 }
+.fig-cap {
 
+  position: relative;
+  text-align: center;
+  top: 700px;
+  font-size: 40px;
+
+}
+#hero-img {
+   position: relative;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: 400px;
+   width: 390px;
+   top: 35vh;
+   border-radius: 50%;
+}
 }
